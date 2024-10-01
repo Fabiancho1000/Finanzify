@@ -12,7 +12,7 @@
     <!--Encabezado de la pagina con Logo y menù de navegación -->
     <header>
         <div class="logo">
-        <!--Logotipo del proyecto-->
+        <!--Logotipo del  -->
             <img src="Logotipo.jpg" alt="logo" width="200" height="auto">
             <h1>Finanzas Personales </h1>
             </div>
@@ -30,7 +30,58 @@
         </ul>
         </nav>
     </header>
-
-    <!--Seccion de Inicio -->
-    <section id="Inicio">
+    <!--Sección de Inicio -->
+    <seccion id="inicio">
         <h2>Bienvenidos a la Gestión de Finanzas Personales</h2>
+        <p>En esta página web podras gestionar tus finanzas de manera eficiente y organizada.</p>
+    </seccion>
+
+    <!--Sección de presupuestos-->
+    <section id="Presupuesto">
+        <h2>Presupuesto Mensual</h2>
+        <p>Planifica tus ingresos y gastos para mantener el control de tus finanzas.</p>
+        <!-- Formulario para capturar ingresos y gastos personales-->
+         <form>
+            <label for="ingresos">Ingresos Mensuales:</label>
+            <input type="number" id="ingresos" name="ingresos" placeholder="Ej.1.400.000">
+            
+            <label for="gastos">Gastos Mensuales:</label>
+            <input type="number" id="gastos" name="gastos" placeholder="Ej.800.000">
+
+            <button type="submit">Calcular Presupuesto</button>
+         </form>
+         <!-- Área para mostrar el resultado del cálculo de presupuesto -->
+          <div id="resultado-presupuesto"></div>
+    </section>
+    
+    <!-- Sección de transacciones -->
+     <section id="transacciones">
+        <h2>Historial de Transacciones</h2>
+        <p>Registro de Todas las Transacciones.</p>
+        <!-- Tabla de Transacciones-->
+         <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Descripción </th>
+                    <th>Categoria</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de transacciones -->
+                 <tr>
+                    <td>2024-09-15</td>
+                    <td>Salario</td>
+                    <td>Ingresos</td>
+                    <td>$1.400.000</td>
+                 </tr>
+                 <tr>
+                    <td>2024-09-16</td>
+                    <td>Arriendo</td>
+                    <td>Gastos Fijos</td>
+                    <td>$600.000</td>
+                 </tr>
+            </tbody>
+         </table>
+    </section>     
