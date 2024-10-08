@@ -7,13 +7,13 @@
     <title>Finanzify</title>
     <!--Enlace al archivo de estilos Css-->
     <link rel="stylesheet" href="style.css">
-</head>
+</head>  
 <body>
     <!--Encabezado de la pagina con Logo y menù de navegación -->
     <header>
         <div class="logo">
         <!--Logotipo del  -->
-            <img src="Logotipo.jpg" alt="logo" width="200" height="auto">
+            <img src="img/Logotipo.jpg" alt="logo" width="200" height="auto">
             <h1>Finanzas Personales </h1>
             </div>
             <!--Menù de Navegaciòn-->
@@ -84,4 +84,52 @@
                  </tr>
             </tbody>
          </table>
-    </section>     
+    </section>
+    
+    <!-- Sección de capital-->
+     <section id="capital">
+        <h2>Capital Actual</h2>
+        <p>Estado Actual de Capital y patrimonio</p>
+        <!-- Gráfico de Capital-->
+         <canvas id="capitalchart" width="200" height="100"></canvas>
+
+     </section>
+
+    <!-- Secciónde Gastos Fijos-->
+      <section id="gastos-fijos">
+       <h2>Gastos Fijos</h2>
+       <p>Control de todos los gastos fijos como lo son; arriendo,servicios,etc.</p>
+       <!-- Lista de gastos Variables-->
+        <ul>
+            <li>Arriendo: $550.000</li>
+            <li>Servicios: $150.000</li>
+            <li>Mercado: 250.000</li>
+        </ul> 
+    </section>
+
+    <!-- Seccion de Gastos Variables -->
+     <section id="gastos-variables">
+        <h2>Gastos Variables</h2>
+        <p>Control de todos los gastos variables como shopping, entretenimiento,etc.</p>
+        <!-- Lista de gastos variables -->
+         <ul>
+            <li>Shopping: $250.000</li>
+            <li>Entretenimiento: $200.000</li>
+         </ul>
+     </section>
+
+     <!-- Seccion de Movimientos -->
+      <section id="movimientos">
+      <h2>Movimientos Financieros</h2>
+      <p>Visualiza tus ingresos y egresos de diferentes categorias.</p>
+      <!--Gráfico de movimientos-->
+      <canvas id="movimientosChart" width="400" height="200"></canvas>
+      </section>
+
+      <!--Pie de Página-->
+      <footer>
+        <p>Finanzas Personales &copy; 2024. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>
+      
